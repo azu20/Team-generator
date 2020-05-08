@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Engineers</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="./add.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center ">Engineers</h1>
+            <br>
+            <hr>
+        </div>
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="card employee-card">
+                    <div class="card-header">
+                        <h2 class="card-title">Name: <input type="text"></h2>
+                        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Role: <input type="text"></h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">ID: <input type="text"></li>
+                            <li class="list-group-item">Email: <a href="mailto:{{ email }}"><input type="text"></a></li>
+                            <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer"><input type="text"></a></li>
+                        </ul>
+                        <br>
+                        <hr>
+                        <a href="/"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span>Submit</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
