@@ -10,6 +10,57 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+async function promptManager() {   
+      return await inquirer.prompt([
+        {
+          type: "input",
+          name: "managerID",
+          message: "What's your Manager ID?"
+        },
+        {
+        type: "input",
+        name: "managerEmail",
+        message: "What's your email?"
+        },   
+        {
+        type: "input",
+          name: "StoreNumber",
+          message: "What's your store number?"
+        }       
+      ]);
+  }
+
+  async function promptForTypeOfEmployee(){
+    return await inquirer.prompt([
+        {
+            type: 'checkbox',
+            name: 'employee',
+            message: 'Who would you like to add to your team?',
+            choices: [
+              `Engineer`,
+              `Intern`,
+              'Done'
+              ]
+          }  
+    ]);
+  }
+
+function buildTeam(){
+
+    //prompt for manager
+    // keep on asking if they want more team members
+    // if they do, then promt for that specific type of team member
+    
+
+} 
+  const result = promptUser();
+
+   
+    result.then((x) => {
+        console.log("inside the then");
+        console.log(x);
+
+    });
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
