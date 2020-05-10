@@ -54,7 +54,7 @@ async function promptForTypeOfEmployee() {
 }
 
 async function promptForEngineer() {
-    // r.Name,r.Id,r.Email,r.GitHub
+ 
     return await inquirer.prompt([
         {
             type: "input",
@@ -80,7 +80,7 @@ async function promptForEngineer() {
 };
 
 async function promptForIntern() {
-    // r.Name,r.Id,r.Email,r.School
+
     return await inquirer.prompt([
         {
             type: "input",
@@ -228,7 +228,7 @@ function divForManager(manager){
         </ul>
     </div>
     </div>
-    `
+    `;
     return text;
 }
 
@@ -272,7 +272,7 @@ function htmlTemplate(managerDiv,teamDivs){
 
 </html>
 
-    `
+    `;
     return text;
 }
 buildTeam();

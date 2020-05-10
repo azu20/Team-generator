@@ -1,50 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Manager</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-    <script src="./add.js"></script>
-</head>
-
-<body>
-    <div class="container">
-        <div class="jumbotron bg-warning">
-            <h1 class="text-center">Manager</h1>
-            <br>
-            <hr>
-        </div>
-        <div class="row">
-
-            <div class="col-12">
-
-                <div class="card employee-card bg-warning">
-                    <div class="card-header">
-                        <h2 class="card-title">Name: <input type="text"></h2>
-                    </div>
-                    <div class="card-body bg-light">
-                        <ul class="list-group">
-                            <li class="list-group-item">ID: <input type="text"></li>
-                            <li class="list-group-item">Email: <a href="mailto:{{ email }}"><input type="text"></a></li>
-                            <li class="list-group-item">Office number: <input type="text"></a></li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <a href="/"><button class="btn btn-primary btn-lg"><span class="fa fa-eye"></span>Submit</button></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">{{ name }}</h2>
+        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>{{ role }}</h3>
     </div>
-</body>
-
-</html>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: {{ id }}</li>
+            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+            <li class="list-group-item">Office number: {{ officeNumber }}</li>
+        </ul>
+    </div>
+</div>
