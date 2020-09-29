@@ -108,7 +108,7 @@ async function promptForIntern() {
 function divForEngineer(eng){
 
     let text = ` 
-    <br>
+ 
     <div class="card employee-card" style="background-color: #6CBF84">
     <div class="card-header">
         <h2 class="card-title">${eng.getName()}</h2>
@@ -130,7 +130,7 @@ function divForEngineer(eng){
 }
 function divForIntern(intern){
     let text = `
-    <br>
+    
     <div class="card employee-card" style="background-color: #1f7fbb">
     <div class="card-header">
         <h2 class="card-title">${intern.getName()}</h2>
@@ -230,7 +230,7 @@ function divForManager(manager){
         </ul>
     </div>
     </div>
-    <br><br>
+    
     `;
     return text;
 }
