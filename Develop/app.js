@@ -19,7 +19,7 @@ async function promptManager() {
             type: "input",
             name: "Name",
             message: "What's your name?"
-        },
+        },  
         {
             type: "input",
             name: "Id",
@@ -108,16 +108,16 @@ async function promptForIntern() {
 function divForEngineer(eng){
 
     let text = ` 
-    <div class="card employee-card">
+    <div class="card employee-card" style="background-color: #6CBF84">
     <div class="card-header">
         <h2 class="card-title">${eng.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${eng.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
-            <li class="list-group-item">ID: ${eng.getId()}</li>
-            <li class="list-group-item">Email:  <a href="mailto:${eng.getEmail()}">${eng.getEmail()}</a></li>
-            <li class="list-group-item">GitHub: <a href="https://github.com/${eng.getGithub()}" target="_blank">
+            <li class="list-group-item" style="background-color: #F4E8C1">ID: ${eng.getId()}</li>
+            <li class="list-group-item" style="background-color: #F4E8C1">Email:  <a href="mailto:${eng.getEmail()}">${eng.getEmail()}</a></li>
+            <li class="list-group-item" style="background-color: #F4E8C1">GitHub: <a href="https://github.com/${eng.getGithub()}" target="_blank">
             ${eng.getGithub()}</a></li>
    
         </ul>
@@ -129,16 +129,16 @@ function divForEngineer(eng){
 }
 function divForIntern(intern){
     let text = `
-    <div class="card employee-card">
+    <div class="card employee-card" style="background-color: #1f7fbb">
     <div class="card-header">
         <h2 class="card-title">${intern.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
-            <li class="list-group-item">ID: ${intern.getId()}</li>
-            <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
-            <li class="list-group-item">School: ${intern.getSchool()}</li>
+            <li class="list-group-item" style="background-color: #F4E8C1">ID: ${intern.getId()}</li>
+            <li class="list-group-item" style="background-color: #F4E8C1">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
+            <li class="list-group-item" style="background-color: #F4E8C1">School: ${intern.getSchool()}</li>
         </ul>
     </div>
   </div>
@@ -215,16 +215,16 @@ async function buildTeam() {
 
 function divForManager(manager){
     const text = `
-    <div class="card employee-card">
+    <div class="card employee-card" style="background-color: #F26968">
     <div class="card-header">
         <h2 class="card-title"> ${manager.getName()} </h2>
         <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${manager.getRole()} </h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
-            <li class="list-group-item">ID: ${manager.getId()}</li>
-            <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
-            <li class="list-group-item">Office number: ${manager.getOfficeNumber()}</li>
+            <li class="list-group-item" style="background-color: #F4E8C1">ID: ${manager.getId()}</li>
+            <li class="list-group-item" style="background-color: #F4E8C1">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
+            <li class="list-group-item" style="background-color: #F4E8C1">Office number: ${manager.getOfficeNumber()}</li>
         </ul>
     </div>
     </div>
@@ -248,17 +248,17 @@ function htmlTemplate(managerDiv,teamDivs){
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
 
-<body>
+<body style="background-color: #F2AD9F" >
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
+            <div class="col-12 jumbotron mb-3 team-heading" style="background-color: #6CBF84">
                 <h1 class="text-center">My Team</h1>
             </div>
         </div>
     </div>
     <div class="container">
     <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+            <div class="team-area col-12 d-flex justify-content-center" >
              ${managerDiv}
             </div>
         </div>    
