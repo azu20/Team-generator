@@ -209,7 +209,7 @@ async function buildTeam() {
     
 
     writeFileAsync(outputPath, finalHtml).then(() => {
-        console.log("Your team page has been created.");
+        console.log("Your team page has been created. open the html page in the output folder to view your team");
       });
 
     console.log("Done generating the team");
