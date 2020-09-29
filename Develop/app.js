@@ -108,6 +108,7 @@ async function promptForIntern() {
 function divForEngineer(eng){
 
     let text = ` 
+    <br>
     <div class="card employee-card" style="background-color: #6CBF84">
     <div class="card-header">
         <h2 class="card-title">${eng.getName()}</h2>
@@ -122,13 +123,14 @@ function divForEngineer(eng){
    
         </ul>
     </div>
-  </div>                     
+  </div>            
     `;
 
     return text;
 }
 function divForIntern(intern){
     let text = `
+    <br>
     <div class="card employee-card" style="background-color: #1f7fbb">
     <div class="card-header">
         <h2 class="card-title">${intern.getName()}</h2>
@@ -228,6 +230,7 @@ function divForManager(manager){
         </ul>
     </div>
     </div>
+    <br><br>
     `;
     return text;
 }
@@ -252,7 +255,7 @@ function htmlTemplate(managerDiv,teamDivs){
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 jumbotron mb-3 team-heading" style="background-color: #6CBF84">
-                <h1 class="text-center">My Team</h1>
+                <h1 class="text-center" style=" background-color: #F7DFD4, font-size: 28px, font-weight: bold ">My Team</h1>
             </div>
         </div>
     </div>
@@ -261,12 +264,21 @@ function htmlTemplate(managerDiv,teamDivs){
             <div class="team-area col-12 d-flex justify-content-center" >
              ${managerDiv}
             </div>
-        </div>    
+        </div>
+        <hr>    
+        <br>
         <div class="row">
             <div class="team-area col-12 d-flex justify-content-center">
              ${teamDivs}
             </div>
         </div>
+        <br>
+        <div class="text-center">
+            <img class="team-picture"
+                src="https://images.unsplash.com/photo-1582005450386-52b25f82d9bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                alt="Grapefruit slice atop a pile of other slices" width="650" height="450">
+        </div>
+        <br><br>
     </div>
 </body>
 
