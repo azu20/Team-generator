@@ -1,4 +1,4 @@
-# Object Oriented Programming: Team Generator App 
+# Team Generator App 
 
 ![webpage image](./webpage-image.PNG)
 
