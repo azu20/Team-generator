@@ -1,7 +1,5 @@
 # Team Generator App 
 
-![webpage image](./webpage-image.PNG)
-
 ## User Story
 
 ```
@@ -13,6 +11,8 @@ so that I have quick access to emails and GitHub profiles
 ## About this app:
 
 This is a software engineering team generator command line application. The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns. This application must also pass all unit tests. When the user has completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user. 
+
+ * ![webpage image](./webpage-image.PNG) 
 
 ## How to use: 
  
@@ -26,4 +26,7 @@ This is a software engineering team generator command line application. The appl
 
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
