@@ -179,9 +179,9 @@ function generateAllHtml(manager, employees){
 async function buildTeam() {
 
     //prompt for manager
-    //keep on prompiting
+    //keep on prompting
     // if they want more team members
-    //    if they do, then promt agin for that specific type of team member
+    //    if they do, then prompt again for that specific type of team member
     //    if they dont then we're done, so get out of the prompting
     //  generate the team HTML page using all the info gathered in the 'loop'
 
